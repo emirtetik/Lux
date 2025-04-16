@@ -1,62 +1,35 @@
-"use client"
-import { Button } from '@/components/ui/button'
-import React from 'react'
-import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
-
-const SectionTwo = () => {
-    return (
-        <div className='bg-orange-100 mt-12'>
-            <div className="mx-auto container text-center py-16 px-6  lg:px-28">
-                    <TypeAnimation
-                        sequence={[
-                            // Same substring at the start will only be typed out once, initially
-                            'WELCOME TO TRAVEL',
-                            2000, // wait 1s before replacing "Mice" with "Hamsters"
-                            'SEYAHATE HOŞ GELDİNİZ',
-                            2000,
-                            'WILLKOMMEN BEI TRAVEL',
-                            2000,
-                            'BIENVENUE À TRAVEL',
-                            2000
-                        ]}
-                        wrapper="span"
-                        speed={50}
-                        className='className="text-2xl lg:text-4xl font-bold text-blue-600 mb-4"'
-                        repeat={Infinity}
-                    />
-                
-                <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi numquam facere facilis rerum fugit eligendi assumenda, ea tempore dolore eius perferendis beatae quae deserunt cupiditate saepe iste delectus, maiores ex, dolorem ad. Suscipit recusandae praesentium fuga ipsa nihil dolore amet voluptatem odit, in animi possimus sint ut, velit omnis!
-                </p>
-                <div className="flex justify-center gap-4">
-                    <motion.div
-                        whileTap={{scale:0.9, y:80}}
-                        whileHover={{scale:1.6}}
-                    >
-
-                   
-                    <Button className="bg-green-500 text-white py-6 px-8 rounded-lg hover:bg-green-600 transition">
-                        Detail
-                    </Button>
-                    </motion.div>
-
-                    <motion.div
-                        whileTap={{scale:0.9, rotate:-10}}
-                        whileHover={{scale:1.6, rotate:5}}
-                    >
-
-                    <Button className="bg-orange-500 text-white py-6 px-8 rounded-lg hover:bg-orange-600 transition">
-                        Browse
-                    </Button>
-                    </motion.div>
-
-                </div>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+import { products } from "@/constant";
 
 
-            </div>
-        </div>
-    )
-}
 
-export default SectionTwo
+export const SectionTwo= () => {
+  return (
+    <div className="flex flex-col items-center mb-10  bg-[var(--background-orange)]">
+      <div className="w-full max-w-7xl py-10">
+      <h2 className="text-3xl font-bold mb-10 text-center">Tasarım Koleksiyonları</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {products.map((product) => (
+          <Card  key={product.id} className="rounded-2xl shadow-lg overflow-hidden bg-[var(--background)]">
+          <div className="flex justify-center">
+  <Image
+    width={100}
+    height={100}
+    src={product.image}
+    alt={product.title}
+    className="object-contain"
+  />
+</div>
+            <CardContent className="px-4">
+              <h3 className="text-lg font-semibold">{product.title}</h3>
+              <p className="text-gray-600">{product.price}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+    </div>
+  );
+};

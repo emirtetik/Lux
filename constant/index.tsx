@@ -1,6 +1,79 @@
 // export const navigationLinks = [
 //     { href: "/", label: "Home" },
+
 // ];
+import { Clock3, MessageCircleQuestion, Truck } from "lucide-react";
+
+export const products = [
+  {
+    id: 1,
+    title: "Minimalist Poster",
+    price: "₺120",
+    image: "/lux7.png",
+  },
+  {
+    id: 2,
+    title: "Modern Çizim",
+    price: "₺150",
+    image: "/lux7.png",
+  },
+  {
+    id: 3,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+  {
+    id: 4,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+  {
+    id: 5,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+  {
+    id: 6,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+  {
+    id: 7,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+  {
+    id: 8,
+    title: "Geometrik Sanat",
+    price: "₺180",
+    image: "/lux7.png",
+  },
+];
+export const cardData = [
+  {
+    id: 1,
+    title: 'Hızlı Teslimat',
+    subtitle: 'Zamanında teslimat garantisiyle ürünlerinizi hızla teslim alırsınız.',
+    icon: <Clock3 className="text-lg text-yellow-500" />,
+  },
+  {
+    id: 2,
+    title: 'Müşteri Desteği',
+    subtitle: 'Sorularınızı hızlıca yanıtlayan 7/24 müşteri destek hizmeti.',
+    icon: <MessageCircleQuestion className="text-lg text-blue-500" />,
+  },
+  {
+    id: 3,
+    title: 'Ücretsiz Kargo',
+    subtitle: 'Tüm alışverişlerinizde ücretsiz kargo fırsatı ile ürünlerinizi kapınıza kadar getirelim.',
+    icon: <Truck className="text-lg text-blue-400" />,
+  },
+];
 
 export const packages = [
     {

@@ -7,7 +7,7 @@ interface RouteLayoutProps{
 }
 const RouteLayout = ({children}:RouteLayoutProps) => {
   return (
-    <div className='max-w-[80vw] mx-auto'>
+    <div className=''>
         <Header/>
         <div className='min-h-screen'>
         {children}
