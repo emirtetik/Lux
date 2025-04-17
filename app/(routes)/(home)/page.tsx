@@ -28,7 +28,6 @@ export default function Home() {
 
           <SectionFour />
 
-          
           <div className="mt-20" />
           <SectionFive/>
           <div className="min-h-34" />

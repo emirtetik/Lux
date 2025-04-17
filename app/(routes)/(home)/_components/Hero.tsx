@@ -43,10 +43,10 @@ const Hero = () => {
           ]}
           wrapper="span"
           speed={50}
-          className="text-xl md:text-4xl font-bold text-gray-300"
+          className="text-xl md:text-4xl font-bold"
           repeat={Infinity}
         />
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-lg ">
           En yeni aydınlatma çözümleriyle tanış.
         </p>
       </motion.div>
@@ -95,10 +95,10 @@ const Hero = () => {
           ]}
           wrapper="span"
           speed={50}
-          className="text-xl md:text-4xl font-bold text-gray-300"
+          className="text-xl md:text-4xl font-bold "
           repeat={Infinity}
         />
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-lg ">
           Estetik, işlevsellik ve enerji tasarrufu bir arada.
         </p>
       </motion.div>
