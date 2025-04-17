@@ -28,8 +28,8 @@ const Hero = () => {
           duration: 1.5,
           ease: "easeOut",
         }}
-        className="w-3/4 hidden md:block text-left p-4 space-y-4  "
-      >
+        className="w-4/4 md:w-3/4 text-center md:text-left p-4 md:space-y-4 
+        absolute bottom-0 md:relative md:bottom-auto">
         <TypeAnimation
           sequence={[
             "Yeniliğe Hazır mısın?",
@@ -46,9 +46,7 @@ const Hero = () => {
           className="text-xl md:text-4xl font-bold"
           repeat={Infinity}
         />
-        <p className="text-lg ">
-          En yeni aydınlatma çözümleriyle tanış.
-        </p>
+        <p className="text-lg ">En yeni aydınlatma çözümleriyle tanış.</p>
       </motion.div>
 
       <motion.div
@@ -61,13 +59,19 @@ const Hero = () => {
         }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false, amount: 0.8 }}
-        className={`absolute top-[-600] w-[600px] h-[500px] z-10`}
+        className={`
+    absolute top-[-300px] sm:top-[-400px] md:top-[-500px] lg:top-[-600px]
+    w-[90%] sm:w-[400px] md:w-[500px] lg:w-[600px] 
+    h-auto 
+    z-10
+  `}
       >
         <Image
           width={600}
           height={500}
           src="/lux8.png"
           alt="Call to action graphic"
+          className="w-full h-auto object-contain"
           draggable={false}
         />
       </motion.div>
@@ -80,7 +84,7 @@ const Hero = () => {
           duration: 1.5,
           ease: "easeOut",
         }}
-        className="w-3/4 hidden md:block text-right  p-4 space-y-4  "
+        className="w-3/4  text-right hidden md:block p-4 space-y-4  "
       >
         <TypeAnimation
           sequence={[
@@ -95,7 +99,7 @@ const Hero = () => {
           ]}
           wrapper="span"
           speed={50}
-          className="text-xl md:text-4xl font-bold "
+          className="text-xl   md:text-4xl font-bold "
           repeat={Infinity}
         />
         <p className="text-lg ">

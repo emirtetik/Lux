@@ -15,14 +15,14 @@ const Footer = () => {
       <div
         className="absolute -top-16 left-1/2 transform -translate-x-1/2 
   bg-gradient-to-t from-[var(--background)]  via-[var(--background)]  to-[var(--background-orange)] overflow-hidden text-left px-6 py-12 
-  w-11/12 max-w-6xl h-72
+  w-12/12  h-72
   grid grid-cols-1 md:grid-cols-2 items-center gap-6"
       >
-        <div>
-          <h2 className="text-3xl font-bold ">
+        <div >
+          <h2 className="text-3xl font-bold  text-center">
             Ready to get started?
           </h2>
-          <p className="mt-2 text-lg ">
+          <p className="mt-2 text-lg text-right">
             It only takes a few minutes to register your FREE Travel account.
           </p>
         </div>

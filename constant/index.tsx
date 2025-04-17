@@ -4,6 +4,30 @@
 // ];
 import { Clock3, MessageCircleQuestion, Truck } from "lucide-react";
 
+export const faqData = [
+  {
+    question: "LED ürünlerinizin ömrü ne kadar?",
+    answer:
+      "LED ürünlerimiz ortalama 50.000 saat dayanıklılık sunar. Bu, günde 8 saat kullanımda yaklaşık 17 yıla denk gelir.",
+  },
+  {
+    question: "Garanti süresi ne kadar?",
+    answer:
+      "Tüm ürünlerimiz 2 yıl garantilidir. Herhangi bir arıza durumunda ücretsiz değişim sağlanır.",
+  },
+  {
+    question: "Siparişten sonra teslimat süresi nedir?",
+    answer:
+      "Siparişleriniz genellikle 2-5 iş günü içerisinde adresinize teslim edilir.",
+  },
+  {
+    question: "Özel ölçü veya proje bazlı sipariş alıyor musunuz?",
+    answer:
+      "Evet, mimari projeler veya özel ölçü talepleri için bizimle iletişime geçebilirsiniz.",
+  },
+];
+
+
 export const products = [
   {
     id: 1,

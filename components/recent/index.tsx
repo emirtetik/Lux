@@ -48,14 +48,6 @@ const RecentProduct = () => {
                       alt={pkg.title}
                       className="w-full h-48 object-cover rounded-t-lg"
                     />
-                    {/* {pkg.discount && (
-                      <Badge
-                        className="absolute top-4 left-4 bg-blue-500
-                                             text-white text-sm px-2 hover:bg-blue-600"
-                      >
-                        {pkg.discount}
-                      </Badge>
-                    )} */}
                   </CardHeader>
                   <CardContent className="p-4">
                     <CardTitle className="text-xl h-[80px]">
