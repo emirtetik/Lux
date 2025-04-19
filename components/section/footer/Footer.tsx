@@ -1,17 +1,15 @@
-import { Instagram } from "lucide-react";
+import { Instagram, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  const socialLinks = [{ href: "#", icon: <Instagram size={16} /> }];
 
   const instagramImages = Array.from(
     { length: 11 },
     (_, index) => `/home/instagram/${index + 1}.jpg`
   );
   return (
-    <footer className="relative">
+    <footer className="relative font-prata">
       <div
         className="absolute -top-16 left-1/2 transform -translate-x-1/2 
   bg-gradient-to-t from-[var(--background)]  via-[var(--background)]  to-[var(--background-orange)] overflow-hidden text-left px-6 py-12 
@@ -39,32 +37,31 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container  mx-auto relative py-48 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-8">
-        <div className="lg:col-span-2 mt-16 ">
-          <h3 className="text-2xl font-bold">Travel</h3>
-          <p className="mt-4 text-sm">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            consectetur omnis ullam iure tempore ab doloremque neque repellendus
-            enim, dolore ratione error, corrupti consequatur nesciunt.
-          </p>
-          <div className="flex mt-4 space-x-4">
-            {socialLinks.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                className="hover:text-orange-500"
-              >
-                {link.icon}
-              </Link>
-            ))}
-          </div>
+      <div className="container   mx-auto relative py-48 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-8">
+        <div className="lg:col-span-1 mt-16  ">
+          <h3 className="text-2xl font-bold">Social</h3>
+          <div className="flex flex-col   gap-3 md:gap-6  mt-8">
+                      <div className="flex items-center gap-2">
+                        <Phone size={14} className="text-orange-500" />
+                        <span>050 505 5005</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Instagram size={14} className="text-orange-500" />
+                        <span>Instagram</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MessageCircle size={14} className="text-orange-500" />
+                        <span>info@ısıltıaydınlatma.com</span>
+                      </div>
+                    </div>
+                    
         </div>
-        <div className="mt-16">
+        <div className="mt-16 ">
           <h4 className="text-xl font-bold mb-4">Yol Tarifi</h4>
           <div className="space-y-2 text-sm mt-8">	Emek Mahallesi D-100 Karayolu Caddesi No:92 Uzunçiftlik / İzmit / Kocaeli</div>
         </div>
         <div className="lg:col-span-2 mt-16">
-          <h4 className="text-xl font-bold mb-4">Instagram</h4>
+          <h4 className="text-xl font-bold mb-4">Fotograflar</h4>
           <div className="grid grid-cols-6  gap-2 mt-8">
             {instagramImages.map((src, index) => (
               <Image
